@@ -550,7 +550,7 @@ body {
 
 /* рабочие стили */
 .wrapper {
-  min-width: 1110;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -558,7 +558,7 @@ body {
   font-family: "Luckiest Guy";
   font-size: 2.4rem;
   color: #333;
-  text-decoration:  ;
+  text-decoration: none ;
 
 }
 
