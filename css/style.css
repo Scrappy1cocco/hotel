@@ -533,6 +533,13 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* рабочие стили */
 body {
   font-family: Muli;
   font-size: 1.4rem;
@@ -542,16 +549,57 @@ body {
   color: #333;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* рабочие стили */
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.tour {
+  color: #EC1F46;
+}
+
+/* header styles */
+
+.header__top {
+  width: 100%;
+  height: 60px;
+  background: #F5FAFE;
+  font-family: Muli;
+  font-style: normal;  
+  font-size: 1rem;
+  line-height: 13px;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header__support {
+  font-weight: normal;
+}
+
+.support__quest {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.header__presents {
+  display: flex;
+  justify-content: space-between;
+  width: 315px;
+}
+
+.presents__gift-icon {
+  margin-right: 20px;
+}
+
+.presents__loyality-icon {
+  margin-right: 20px;
 }
 
 .header__logo-link {
@@ -560,8 +608,4 @@ body {
   color: #333;
   text-decoration: none ;
 
-}
-
-.header__logo-link  span {
-  color: #EC1F46;
 }
